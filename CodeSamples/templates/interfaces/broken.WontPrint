@@ -1,0 +1,64 @@
+package main
+
+import (
+	"fmt"
+)
+
+type human map[string]interface{}
+type anything map[interface{}]interface{}
+
+func main() {
+
+	fmt.Println("What the hell?")
+
+
+	person := make(human)
+	wth := make(anything)
+
+	// set the person "name" to "Alice"
+
+	name := "name"
+	person[name] = "JR"
+	wth[7] = "Age"
+
+	// Set the persons age to any int
+
+	person["age"] = 63
+	wth["June"] = "Season"
+
+	// Set the person height to any float64
+
+	person["height"] = 6.2
+	myslice := []int{1,2,3}
+
+	wth[myslice[0]] = 6
+
+	wth["Sum:"] = sum(myslice)
+	wth[sum(myslice)] = "is the total"
+
+	// print the person
+    fmt.Printf("%+v\n", person)
+
+//    fmt.Printf("%+v\n", wth)
+
+/*
+    for _, v := range wth {
+
+
+    	fmt.Printf(v.(string))
+
+    }
+*/
+}
+
+func sum(numb []int) int {
+
+	t := 0
+	for _, n := range numb {
+
+		t += n
+
+	}
+
+	return t
+}

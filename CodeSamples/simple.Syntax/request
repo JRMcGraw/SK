@@ -1,0 +1,5 @@
+r.Method
+r.URL
+r.Header
+(r.Body
+r.Response
