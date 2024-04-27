@@ -1,0 +1,8 @@
+Connect:  db, err := sqlx.Open("driverName", "dataSourceName")
+Close:    db.Close()
+Exec:     result, err := db.Exec("query", args)
+Query:    rows, err := db.Query("query", args)
+QueryRow: row := db.QueryRow("query", args)
+Prepare:  stmt, err := db.Prepare("query")
+Begin:    tx, err := db.Begin()
+Commit:   err := tx.Commit()
