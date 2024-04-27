@@ -1,0 +1,54 @@
+2 [5 6 7 8]
+8 [15]
+9 [15]
+1 [2 3 4 15]
+6 [14 11 16]
+10 [9 11 12 13 14 16]
+13 [14 14]
+5 [6 10 8 12 6 13 7]
+7 [12 16]
+14 [16]
+3 [9 10]
+4 [10 12 13 16]
+15 [16]
+[1]
+Start: 2 Endpoints: [5 6 7 8] Target: 16
+Walked so far: [1] Next: 2 [5 6 7 8] 16
+In Range: 0 5 [5 6 7 8]
+Walked so far: [1 5] Next: 5 [6 10 8 12 6 13 7] 16
+In Range: 0 6 [6 10 8 12 6 13 7]
+Walked so far: [1 5 6] Next: 6 [14 11 16] 16
+In Range: 0 14 [14 11 16]
+Walked so far: [1 5 6 14] Next: 14 [16] 16
+In Range: 0 16 [16]
+Found a path: [1 5 6 14 16]
+Walked: [1 5 6 14 16] 5 true
+Start: 3 Endpoints: [9 10] Target: 16
+Walked so far: [] Next: 3 [9 10] 16
+In Range: 0 9 [9 10]
+Walked so far: [9] Next: 9 [15] 16
+In Range: 0 15 [15]
+Walked so far: [9 15] Next: 15 [16] 16
+In Range: 0 16 [16]
+Found a path: [9 15 16]
+Walked: [9 15 16] 3 true
+Start: 4 Endpoints: [10 12 13 16] Target: 16
+Walked so far: [] Next: 4 [10 12 13 16] 16
+In Range: 0 10 [10 12 13 16]
+Walked so far: [10] Next: 10 [9 11 12 13 14 16] 16
+In Range: 0 9 [9 11 12 13 14 16]
+Walked so far: [10 9] Next: 9 [15] 16
+In Range: 0 15 [15]
+Walked so far: [10 9 15] Next: 15 [16] 16
+In Range: 0 16 [16]
+Found a path: [10 9 15 16]
+Walked: [10 9 15 16] 4 true
+Start: 15 Endpoints: [16] Target: 16
+Walked so far: [] Next: 15 [16] 16
+In Range: 0 16 [16]
+Found a path: [16]
+Walked: [16] 1 true
+Path: [1 5 6 14 16] 5
+Path: [9 15 16] 3
+Path: [10 9 15 16] 4
+Path: [16] 1
