@@ -17,7 +17,7 @@ func main() {
 	mux.HandleFunc("/hello", getHello)
 	mux.HandleFunc("/oldway", oldWay)
 
-	go http.ListenAndServe(":8090", mux)
+//	go http.ListenAndServe(":8090", mux)
 	http.ListenAndServe(":8080", mux)
 
 }
